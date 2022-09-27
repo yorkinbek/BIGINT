@@ -118,7 +118,7 @@ func Add(a, b Bigint) Bigint {
 		// +a + (+b)
 	}
 	if checkPlusMinus_x == "-" && checkPlusMinus_y == "+" && compareStringsByValue(x, y) == 1 {
-		answer = removeZeros("-" + sub(x, y))
+		answer = sub(x, y)
 		// +a + (+b)
 	}
 	if checkPlusMinus_x == "-" && checkPlusMinus_y == "+" && compareStringsByValue(x, y) == -1 {
